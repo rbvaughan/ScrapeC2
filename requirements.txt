@@ -1,0 +1,12 @@
+# Core OCR & image-processing stack
+numpy>=1.24
+opencv-python>=4.10
+Pillow>=10.2
+pytesseract>=0.3.10          # wrapper – requires the Tesseract binary in PATH
+
+# Lattice publishing
+anduril-lattice-sdk>=0.2.0   # official Python SDK
+requests>=2.31               # fallback/raw HTTP if SDK not importable
+
+# If you plan to bundle the app with PyInstaller, keep this line so hidden-imports resolve:
+# pyinstaller-hooks-contrib>=2024.0
